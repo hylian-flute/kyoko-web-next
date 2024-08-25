@@ -1,95 +1,75 @@
+import Frame from "@/component/frame";
+import style from "./page.module.css";
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+    <Frame>
+      <main className={style.main}>
+        <p className={style.profile}>
+          2004年よりフリーランスでデザインのお仕事をスタート
+          <br />
+          <span className={style.bold}>
+            『大人可愛い』をテーマに
+            <br />
+            エレガントなデザインや
+            <br />
+            シンプルでも大人可愛いデザイン
+          </span>
+          <br />
+          どの方にもご注文して頂けるテンプレートデザインの
+          <br />
+          名刺など承っております。
+          <br />
+          サロンやおうちで教室などされている方の名刺&nbsp;/
+          <br />
+          ディプロマ&nbsp;/&nbsp;ショップカード&nbsp;/&nbsp;ショップシール&nbsp;/
+          <br />
+          リーフレット&nbsp;/&nbsp;フライヤーなどをリーズナブルな金額で
+          <br />
+          お手伝いさせて頂いてます。
+          <br />
+          お気軽にお問い合わせください。
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+        <ul className={style.linkList}>
+          <li>
+            <Link href="/">
+              <Image src="/image/thumbnails/business_card.png" alt="" width={227} height={283} />
+              <div>名刺</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <Image src="/image/thumbnails/shop_card.png" alt="" width={227} height={283} />
+              <div>正方形ショップカード</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <Image src="/image/thumbnails/shop_sticker.png" alt="" width={227} height={283} />
+              <div>ショップシール</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <Image src="/image/thumbnails/diploma.png" alt="" width={227} height={283} />
+              <div>ディプロマ</div>
+            </Link>
+          </li>
+        </ul>
+        <div className={style.socialList}>
+          <a href="/">
+            <Image className={style.instagram} src="/image/social/instagram.png" alt="Instagram" width={52} height={52} />
+          </a>
+          <a href="/">
+            <Image className={style.ameba} src="/image/social/ameba.png" alt="アメーバブログ" width={97} height={112} />
+          </a>
+          <a href="/">
+            <Image className={style.minne} src="/image/social/minne.png" alt="minne" width={120} height={50} />
           </a>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+    </Frame>
   );
 }

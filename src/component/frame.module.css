@@ -1,0 +1,41 @@
+.frame {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.navBackground {
+  position: fixed;
+  transition: opacity 0.3s;
+  pointer-events: none;
+
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &.navVisible {
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+.nav {
+  --width: 280px;
+
+  position: fixed;
+  transition: left 0.3s;
+
+  width: var(--width);
+  top: 0;
+  bottom: 0;
+  left: calc(-1 * var(--width));
+
+  &.navVisible {
+    left: 0;
+  }
+}
+
+.footer {
+  margin-top: 24px;
+}
