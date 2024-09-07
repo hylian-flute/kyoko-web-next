@@ -60,7 +60,7 @@ export default function Home() {
               height={86}
             />
             <div className={style.text}>
-              <div className={[style.cardTitle, style.narrow].join(" ")}>正方形ショップカード</div>
+              <div className={style.cardTitle}>正方形ショップカード</div>
               <div className={style.cardSubtitle}>80枚&emsp;3500円</div>
               <div className={style.cardDescription}>SIZE:50mm/40mm</div>
             </div>
