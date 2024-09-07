@@ -7,11 +7,14 @@
   white-space: nowrap;
 
   letter-spacing: -0.2px;
-  line-height: 26px;
+  line-height: 20px;
 
   .bold {
+    display: inline-block;
+
     font-weight: bold;
 
+    margin: 4px 0;
     font-size: 16px;
     line-height: 22px;
   }
@@ -19,6 +22,7 @@
 
 .linkCard {
   display: flex;
+  justify-content: space-around;
   box-sizing: border-box;
 
   background-color: var(--color-light-gray);
@@ -38,19 +42,16 @@
   }
 
   .text {
-    margin-left: 12px;
+    width: 150px;
     padding-top: 4px;
+    padding: 4px 0 0 12px;
 
     .cardTitle {
       white-space: nowrap;
 
-      font-size: 16px;
-
       font-weight: bold;
 
-      &.narrow {
-        font-size: 15px;
-      }
+      font-size: 15px;
     }
 
     .cardSubtitle {
@@ -59,7 +60,8 @@
       font-weight: bold;
 
       &:has(.small) {
-        line-height: 12px;
+        margin: 6px 0;
+        line-height: 10px;
       }
 
       .small {
@@ -70,7 +72,7 @@
     .cardDescription {
       margin-top: 2px;
       font-size: 10px;
-      line-height: 14px;
+      line-height: 12px;
       
       color: var(--color-gray);
     }
