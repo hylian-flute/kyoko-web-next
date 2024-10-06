@@ -297,7 +297,7 @@ export default function BusinessCard() {
         </p>
         <div className={style.imageList}>
           {IMAGE_ARR.map((imageItem) => (
-            <div className={style.listItem}>
+            <div className={style.listItem} key={imageItem.nameText}>
               <Image
                 className={style.image}
                 src={imageItem.thumbnailUrl}
