@@ -3,25 +3,8 @@
 }
 
 .frame {
-  max-width: 440px;
+  max-width: var(--max-width);
   margin: 0 auto;
-}
-
-.navBackground {
-  position: fixed;
-  transition: opacity 0.3s;
-  pointer-events: none;
-
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  &.navVisible {
-    pointer-events: auto;
-    opacity: 1;
-  }
 }
 
 .nav {

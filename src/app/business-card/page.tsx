@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Frame from "@/component/frame";
+import FullSizeImageDialog from "@/component/full_size_image_dialog";
 import style from "./page.module.css";
+import { useState } from "react";
 
 class ImageItem {
   constructor(
@@ -285,6 +289,10 @@ const IMAGE_ARR = [
 ];
 
 export default function BusinessCard() {
+  const [fullSizeImageArr, setFullSizeImageArr] = useState<string[] | null>(
+    null
+  );
+
   return (
     <Frame>
       <main className={style.main}>
@@ -304,11 +312,21 @@ export default function BusinessCard() {
                 alt=""
                 width={500}
                 height={500}
+                onClick={() => setFullSizeImageArr(imageItem.fullImageUrlArr)}
               />
               <div className={style.name}>{imageItem.nameText}</div>
             </div>
           ))}
         </div>
+        {fullSizeImageArr && (
+          <FullSizeImageDialog
+            className={"fullViewportOverlay visible"}
+            imageUrlArr={fullSizeImageArr}
+            onClose={() => {
+              setFullSizeImageArr(null);
+            }}
+          />
+        )}
       </main>
     </Frame>
   );

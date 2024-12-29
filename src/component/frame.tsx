@@ -23,8 +23,8 @@ export default function Frame({ children }: Props) {
       {children}
       <DialogBackground
         className={[
-          style.navBackground,
-          ...(navVisibilityBool ? [style.navVisible] : []),
+          "fullViewportOverlay",
+          ...(navVisibilityBool ? ["visible"] : []),
         ].join(" ")}
         onClick={hideNav}
       />
