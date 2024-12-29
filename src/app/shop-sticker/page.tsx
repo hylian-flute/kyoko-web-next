@@ -4,7 +4,7 @@ import Image from "next/image";
 import Frame from "@/component/frame";
 import FullSizeImageDialog from "@/component/full_size_image_dialog";
 import style from "./page.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 class ImageItem {
   constructor(
@@ -102,6 +102,10 @@ export default function BusinessCard() {
   const [fullSizeImageArr, setFullSizeImageArr] = useState<string[] | null>(
     null
   );
+
+  useEffect(() => {
+    document.title = "ショップシール - Design shop Kyoko K";
+  }, []);
 
   return (
     <Frame>
