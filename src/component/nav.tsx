@@ -21,9 +21,9 @@ export default function Nav({ className }: Props) {
       <ul className={style.linkList}>
         <li><Link href="/business-card/">名刺</Link></li>
         <li><Link href="/">スタンプカード</Link></li>
-        <li><Link href="/">正方形ショップカード</Link></li>
+        <li><Link href="/shop-card/">正方形ショップカード</Link></li>
         <li><Link href="/">タグ</Link></li>
-        <li><Link href="/">シール</Link></li>
+        <li><Link href="/shop-sticker/">シール</Link></li>
         <li><Link href="/">ディプロマ</Link></li>
         <li><Link href="/">フライヤー</Link></li>
         <li><Link href="/">リーフレット</Link></li>
