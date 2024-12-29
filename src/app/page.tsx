@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <Link className={style.linkCard} href="/">
+          <Link className={style.linkCard} href="/shop-card/">
             <Image
               className={style.image}
               src="/image/thumbnails/shop_card.png"
@@ -65,7 +65,7 @@ export default function Home() {
               <div className={style.cardDescription}>SIZE:50mm/40mm</div>
             </div>
           </Link>
-          <Link className={style.linkCard} href="/">
+          <Link className={style.linkCard} href="/shop-sticker/">
             <Image
               className={style.image}
               src="/image/thumbnails/shop_sticker.png"
