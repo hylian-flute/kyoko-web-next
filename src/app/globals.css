@@ -6,9 +6,28 @@
   --color-gold: #529002;
   --color-light-yellow: #fbfbde;
 
+  --max-width: 440px;
+
   font-size: 12px;
 }
 
 body {
   margin: 0;
+}
+
+.fullViewportOverlay {
+  position: fixed;
+  transition: opacity 0.3s;
+  pointer-events: none;
+
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &.visible {
+    pointer-events: auto;
+    opacity: 1;
+  }
 }

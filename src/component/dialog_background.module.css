@@ -1,4 +1,4 @@
-.background {
+.rootBackground {
   background-color: var(--color-black);
   filter: opacity(0.5);
 }

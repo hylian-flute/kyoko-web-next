@@ -19,7 +19,7 @@ export default function Nav({ className }: Props) {
         ></Image>
       </div>
       <ul className={style.linkList}>
-        <li><Link href="/">名刺</Link></li>
+        <li><Link href="/business-card/">名刺</Link></li>
         <li><Link href="/">スタンプカード</Link></li>
         <li><Link href="/">正方形ショップカード</Link></li>
         <li><Link href="/">タグ</Link></li>

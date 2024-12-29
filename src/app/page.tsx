@@ -33,7 +33,7 @@ export default function Home() {
           お気軽にお問い合わせください。
         </p>
         <div>
-          <Link className={style.linkCard} href="/">
+          <Link className={style.linkCard} href="/business-card/">
             <Image
               className={style.image}
               src="/image/thumbnails/business_card.png"

@@ -19,12 +19,12 @@ export default function Frame({ children }: Props) {
 
   return (
     <div className={style.frame}>
-      <Header onClickMenu={showNav} />
+      <Header className={style.header} onClickMenu={showNav} />
       {children}
       <DialogBackground
         className={[
-          style.navBackground,
-          ...(navVisibilityBool ? [style.navVisible] : []),
+          "fullViewportOverlay",
+          ...(navVisibilityBool ? ["visible"] : []),
         ].join(" ")}
         onClick={hideNav}
       />
