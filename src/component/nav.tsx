@@ -24,7 +24,7 @@ export default function Nav({ className }: Props) {
         <li><Link href="/shop-card/">正方形ショップカード</Link></li>
         <li><Link href="/">タグ</Link></li>
         <li><Link href="/shop-sticker/">シール</Link></li>
-        <li><Link href="/">ディプロマ</Link></li>
+        <li><Link href="/diploma/">ディプロマ</Link></li>
         <li><Link href="/">フライヤー</Link></li>
         <li><Link href="/">リーフレット</Link></li>
         <li><Link href="/">お客様からの画像</Link></li>

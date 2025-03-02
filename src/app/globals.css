@@ -6,13 +6,24 @@
   --color-gold: #529002;
   --color-light-yellow: #fbfbde;
 
-  --max-width: 440px;
+  /*
+   * 画面幅について。
+   * 360px: レイアウトを保証する最低幅。iPhone SE 2nd Genの横幅375pxの96%。
+   * 667px: PC向けレイアウトの最小幅。iPhone SE 2nd Genの横向きの幅。
+   * 1024px: 最大コンテンツ幅。iPad miniの横向きの幅。
+   */
+  --min-pc-width: 667px;
+  --max-width: 1024px;
 
   font-size: 12px;
 }
 
 body {
   margin: 0;
+}
+
+p {
+  word-break: keep-all;
 }
 
 .fullViewportOverlay {

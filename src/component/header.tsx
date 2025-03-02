@@ -10,15 +10,16 @@ type Props = Readonly<{
 export default function Header({ className, onClickMenu }: Props) {
   return (
     <header className={className}>
-      <Link href="/">
-        <Image
-          className={style.headerImage}
-          src="/image/header.png"
-          alt="Design shop Kyoko.K"
-          width={455}
-          height={132}
-          priority
-        />
+      <Link className={style.headerBackground} href="/">
+        <div className={style.headerContent}>
+          <Image
+            className={style.headerLogo}
+            src="/image/logo.png"
+            alt="Design shop Kyoko.K"
+            width={130}
+            height={18}
+          />
+        </div>
       </Link>
       <div className={style.navigationHeader}>
         <Image
