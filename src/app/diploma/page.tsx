@@ -7,87 +7,88 @@ import ImageList, { ImageItem } from "@/component/image-list";
 
 const IMAGE_ARR = [
   ImageItem.fromThumbnailAsFullImage(
-    "R-0132",
-    "/image/shop-sticker/R-0132.png",
+    "DP-0001 ヨコ",
+    "/image/diploma/DP-001-h.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0139",
-    "/image/shop-sticker/R-0139.png",
+    "DP-0001 タテ",
+    "/image/diploma/DP-001-v.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0141",
-    "/image/shop-sticker/R-0141.png",
+    "DP-0002 ヨコ",
+    "/image/diploma/DP-002-h.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0151",
-    "/image/shop-sticker/R-0151.png",
+    "DP-0002 タテ",
+    "/image/diploma/DP-002-v.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0155",
-    "/image/shop-sticker/R-0155.png",
+    "DP-0003 ヨコ",
+    "/image/diploma/DP-003-h.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0156",
-    "/image/shop-sticker/R-0156.png",
+    "DP-0003 タテ",
+    "/image/diploma/DP-003-v.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0210",
-    "/image/shop-sticker/R-0210.png",
+    "DP-0004 ヨコ",
+    "/image/diploma/DP-004-h.png",
+    ["/image/diploma/DP-004-h-2.png"]
+  ),
+  ImageItem.fromThumbnailAsFullImage(
+    "DP-0004 タテ",
+    "/image/diploma/DP-004-v.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0226",
-    "/image/shop-sticker/R-0226.png",
+    "DP-0006",
+    "/image/diploma/DP-006.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0601",
-    "/image/shop-sticker/R-0601.png",
+    "DP-0007",
+    "/image/diploma/DP-007.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0602",
-    "/image/shop-sticker/R-0602.png",
+    "DP-0009",
+    "/image/diploma/DP-009.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0605",
-    "/image/shop-sticker/R-0605.png",
+    "DP-0010",
+    "/image/diploma/DP-010.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0705",
-    "/image/shop-sticker/R-0705.png",
+    "DP-0011",
+    "/image/diploma/DP-011.png",
     []
   ),
   ImageItem.fromThumbnailAsFullImage(
-    "R-0806",
-    "/image/shop-sticker/R-0806.png",
-    []
-  ),
-  ImageItem.fromThumbnailAsFullImage(
-    "R-1005",
-    "/image/shop-sticker/R-1005.png",
+    "DP-0012",
+    "/image/diploma/DP-012.png",
     []
   ),
 ];
 
-export default function ShopSticker() {
+export default function Diploma() {
   useEffect(() => {
-    document.title = "ショップシール - Design shop Kyoko K";
+    document.title = "ディプロマ - Design shop Kyoko K";
   }, []);
 
   return (
     <Frame>
       <main className={style.main}>
-        <h1 className={style.head}>【ショップシールテンプレートデザイン一覧】</h1>
-        <div className={style.price}>100枚&nbsp;3110円</div>
+        <h1 className={style.head}>【ディプロマテンプレートデザイン一覧】</h1>
+        {/* TODO: 要確認 */}
+        <div className={style.price}>1名様分&nbsp;500円</div>
         <p className={style.description}>
           印刷会社での印刷ですので
           <br />

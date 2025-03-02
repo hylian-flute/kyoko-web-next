@@ -1,13 +1,36 @@
-.headerImage {
-  object-fit: cover;
-  object-position: right bottom;
-
-  width: 100%;
+.headerBackground {
+  display: block;
+  background-image: url('/image/header-tile.png');
   height: 70px;
+  width: 100%;
+
+  .headerContent{
+    height: 100%;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    position: relative;
+    width: 100%;
+
+    .headerLogo {
+      aspect-ratio: 130 / 18;
+      width: auto;
+      height: 18px;
+      bottom: 12px;
+      position: absolute;
+      right: 18px;
+
+      @media screen and (min-width: 667px) {
+        height: 27px;
+      }
+    }
+  }
 }
+
 
 .navigationHeader {
   display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -16,4 +39,9 @@
 
   width: 20px;
   height: 20px;
+
+  @media screen and (min-width: 667px) {
+    width: 30px;
+    height: 30px;
+  }
 }

@@ -18,9 +18,11 @@ export default function Frame({ children }: Props) {
   const hideNav = () => setNavVisibilityBool(false);
 
   return (
-    <div className={style.frame}>
+    <div>
       <Header className={style.header} onClickMenu={showNav} />
-      {children}
+      <main className={style.main}>
+        {children}
+      </main>
       <DialogBackground
         className={[
           "fullViewportOverlay",

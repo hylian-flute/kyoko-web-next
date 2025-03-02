@@ -2,9 +2,9 @@
   margin-bottom: 12px;
 }
 
-.frame {
-  max-width: var(--max-width);
+.main {
   margin: 0 auto;
+  max-width: var(--max-width);
 }
 
 .nav {
@@ -24,5 +24,6 @@
 }
 
 .footer {
-  margin-top: 24px;
+  margin: 24px auto 0;
+  max-width: var(--max-width);
 }

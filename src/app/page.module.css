@@ -4,7 +4,6 @@
 
 .profile {
   text-align: center;
-  white-space: nowrap;
 
   letter-spacing: -0.2px;
   line-height: 20px;
@@ -20,61 +19,78 @@
   }
 }
 
-.linkCard {
-  display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
 
-  background-color: var(--color-light-gray);
+.linkCardContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 8px;
 
-  margin-top: 16px;
-  height: 128px;
-  padding: 20px 8px;
-
-  color: var(--color-black);
-  text-decoration: none;
-
-  .image {
-    width: 128px;
-    height: 100%;
-
-    object-fit: scale-down;
+  @media screen and (min-width: 667px) {
+    grid-template-columns: calc(100% / 2 - 8px) calc(100% / 2 - 8px);
   }
 
-  .text {
-    width: 150px;
-    padding-top: 4px;
-    padding: 4px 0 0 12px;
+  .linkCard {
+    /*
+     * 最小のコンテンツ幅:
+     * margin + image + margin + text + margin
+     * = 8 + 128 + 12 + 150 + 8 = 306px
+     */
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
 
-    .cardTitle {
-      white-space: nowrap;
+    background-color: var(--color-light-gray);
 
-      font-weight: bold;
+    margin-top: 16px;
+    height: 128px;
+    padding: 20px 8px;
 
-      font-size: 15px;
+    color: var(--color-black);
+    text-decoration: none;
+
+
+    .image {
+      width: 128px;
+      height: 100%;
+
+      object-fit: scale-down;
     }
 
-    .cardSubtitle {
-      margin-top: 2px;
+    .text {
+      width: 150px;
+      padding-top: 4px;
+      padding: 4px 0 0 12px;
 
-      font-weight: bold;
+      .cardTitle {
+        white-space: nowrap;
 
-      &:has(.small) {
-        margin: 6px 0;
-        line-height: 10px;
+        font-weight: bold;
+
+        font-size: 15px;
       }
 
-      .small {
-        font-size: 8px;
-      }
-    }
+      .cardSubtitle {
+        margin-top: 2px;
 
-    .cardDescription {
-      margin-top: 2px;
-      font-size: 10px;
-      line-height: 12px;
-      
-      color: var(--color-gray);
+        font-weight: bold;
+
+        &:has(.small) {
+          margin: 6px 0;
+          line-height: 10px;
+        }
+
+        .small {
+          font-size: 8px;
+        }
+      }
+
+      .cardDescription {
+        margin-top: 2px;
+        font-size: 10px;
+        line-height: 12px;
+        
+        color: var(--color-gray);
+      }
     }
   }
 }

@@ -19,7 +19,7 @@ export default function Home() {
           </span>
           <br />
           どの方にもご注文して頂けるテンプレートデザインの
-          <br />
+          <wbr />
           名刺など承っております。
           <br />
           サロンやおうちで教室などされている方の名刺&nbsp;/
@@ -32,7 +32,7 @@ export default function Home() {
           <br />
           お気軽にお問い合わせください。
         </p>
-        <div>
+        <div className={style.linkCardContainer}>
           <Link className={style.linkCard} href="/business-card/">
             <Image
               className={style.image}
@@ -85,7 +85,7 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <Link className={style.linkCard} href="/">
+          <Link className={style.linkCard} href="/diploma/">
             <Image
               className={style.image}
               src="/image/thumbnails/diploma.png"

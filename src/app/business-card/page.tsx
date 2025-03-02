@@ -1,29 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Frame from "@/component/frame";
-import FullSizeImageDialog from "@/component/full_size_image_dialog";
 import style from "./page.module.css";
-import { useEffect, useState } from "react";
-
-class ImageItem {
-  constructor(
-    public nameText: string,
-    public thumbnailUrl: string,
-    public fullImageUrlArr: string[]
-  ) {}
-
-  static fromThumbnailAsFullImage(
-    nameText: string,
-    thumbnailUrl: string,
-    fullImageUrlArr: string[]
-  ) {
-    return new ImageItem(nameText, thumbnailUrl, [
-      thumbnailUrl,
-      ...fullImageUrlArr,
-    ]);
-  }
-}
+import { useEffect } from "react";
+import ImageList, { ImageItem } from "@/component/image-list";
 
 const IMAGE_ARR = [
   ImageItem.fromThumbnailAsFullImage(
@@ -289,10 +269,6 @@ const IMAGE_ARR = [
 ];
 
 export default function BusinessCard() {
-  const [fullSizeImageArr, setFullSizeImageArr] = useState<string[] | null>(
-    null
-  );
-
   useEffect(() => {
     document.title = "名刺 - Design shop Kyoko K";
   }, []);
@@ -307,30 +283,7 @@ export default function BusinessCard() {
           <br />
           鮮明で高品質
         </p>
-        <div className={style.imageList}>
-          {IMAGE_ARR.map((imageItem) => (
-            <div className={style.listItem} key={imageItem.nameText}>
-              <Image
-                className={style.image}
-                src={imageItem.thumbnailUrl}
-                alt=""
-                width={500}
-                height={500}
-                onClick={() => setFullSizeImageArr(imageItem.fullImageUrlArr)}
-              />
-              <div className={style.name}>{imageItem.nameText}</div>
-            </div>
-          ))}
-        </div>
-        {fullSizeImageArr && (
-          <FullSizeImageDialog
-            className={"fullViewportOverlay visible"}
-            imageUrlArr={fullSizeImageArr}
-            onClose={() => {
-              setFullSizeImageArr(null);
-            }}
-          />
-        )}
+        <ImageList imageItemArr={IMAGE_ARR} />
       </main>
     </Frame>
   );
