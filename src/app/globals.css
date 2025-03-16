@@ -42,3 +42,15 @@ p {
     opacity: 1;
   }
 }
+
+.onlyPc {
+  @media screen and (max-width: 666px) {
+    display: none;
+  }
+}
+
+.onlyMobile {
+  @media screen and (min-width: 667px) {
+    display: none;
+  }
+}

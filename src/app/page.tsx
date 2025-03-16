@@ -13,24 +13,20 @@ export default function Home() {
           <span className={style.bold}>
             『大人可愛い』をテーマに
             <br />
-            エレガントなデザインや
-            <br />
-            シンプルでも大人可愛いデザイン
+            エレガント・華やか・シンプルなど様々なデザイン
           </span>
           <br />
-          どの方にもご注文して頂けるテンプレートデザインの
-          <wbr />
-          名刺など承っております。
+          どの方にもご注文して頂けるテンプレートデザインを
+          <br className={"onlyMobile"} />
+          多数ご用意しております。
           <br />
-          サロンやおうちで教室などされている方の名刺&nbsp;/
+          サロンやおうちで教室などをされている方の
           <br />
-          ディプロマ&nbsp;/&nbsp;ショップカード&nbsp;/&nbsp;ショップシール&nbsp;/
+          名刺、ディプロマ、ショップカード、ショップシール、リーフレット、フライヤーなど
           <br />
-          リーフレット&nbsp;/&nbsp;フライヤーなどをリーズナブルな金額で
+          少量からリーズナブルな金額でお手伝いさせていただいてます。
           <br />
-          お手伝いさせて頂いてます。
-          <br />
-          お気軽にお問い合わせください。
+          お気軽にお問い合せ下さい。
         </p>
         <div className={style.linkCardContainer}>
           <Link className={style.linkCard} href="/business-card/">
@@ -108,36 +104,8 @@ export default function Home() {
             </div>
           </Link>
         </div>
-        {
-          // <ul className={style.linkList}>
-          //   <li>
-          //     <Link href="/">
-          //       <Image src="/image/thumbnails/business_card.png" alt="" width={227} height={283} />
-          //       <div>名刺</div>
-          //     </Link>
-          //   </li>
-          //   <li>
-          //     <Link href="/">
-          //       <Image src="/image/thumbnails/shop_card.png" alt="" width={227} height={283} />
-          //       <div>正方形ショップカード</div>
-          //     </Link>
-          //   </li>
-          //   <li>
-          //     <Link href="/">
-          //       <Image src="/image/thumbnails/shop_sticker.png" alt="" width={227} height={283} />
-          //       <div>ショップシール</div>
-          //     </Link>
-          //   </li>
-          //   <li>
-          //     <Link href="/">
-          //       <Image src="/image/thumbnails/diploma.png" alt="" width={227} height={283} />
-          //       <div>ディプロマ</div>
-          //     </Link>
-          //   </li>
-          // </ul>
-        }
         <div className={style.socialList}>
-          <a href="/">
+          <a href="https://www.instagram.com/designshop_kyoko.k/" target="_blank" rel="noopener noreferrer">
             <Image
               className={style.instagram}
               src="/image/social/instagram.png"
@@ -146,7 +114,7 @@ export default function Home() {
               height={52}
             />
           </a>
-          <a href="/">
+          <a href="https://ameblo.jp/nanarin-0328" target="_blank" rel="noopener noreferrer">
             <Image
               className={style.ameba}
               src="/image/social/ameba.png"
@@ -155,7 +123,7 @@ export default function Home() {
               height={112}
             />
           </a>
-          <a href="/">
+          <a href="https://minne.com/@kyoko-k0328" target="_blank" rel="noopener noreferrer">
             <Image
               className={style.minne}
               src="/image/social/minne.png"

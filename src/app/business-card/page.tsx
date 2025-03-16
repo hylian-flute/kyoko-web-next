@@ -278,11 +278,7 @@ export default function BusinessCard() {
       <main className={style.main}>
         <h1 className={style.head}>【名刺テンプレートデザイン一覧】</h1>
         <div className={style.price}>100枚&nbsp;4000円</div>
-        <p className={style.description}>
-          印刷会社での印刷ですので
-          <br />
-          鮮明で高品質
-        </p>
+        <p className={style.description}>※全て印刷所での印刷物</p>
         <ImageList imageItemArr={IMAGE_ARR} />
       </main>
     </Frame>
