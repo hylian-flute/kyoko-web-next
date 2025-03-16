@@ -213,10 +213,11 @@ export default function ShopCard() {
       <main className={style.main}>
         <h1 className={style.head}>【正方形ショップカードテンプレートデザイン一覧】</h1>
         <div className={style.price}>80枚&nbsp;3500円</div>
+        <div className={style.price}>100枚&nbsp;4000円</div>
         <p className={style.description}>
-          印刷会社での印刷ですので
+          用紙：ホワイトアートポスト紙(両面微光沢紙)
           <br />
-          鮮明で高品質
+          ※全て印刷所での印刷物
         </p>
         <ImageList imageItemArr={IMAGE_ARR} />
       </main>

@@ -87,12 +87,9 @@ export default function ShopSticker() {
     <Frame>
       <main className={style.main}>
         <h1 className={style.head}>【ショップシールテンプレートデザイン一覧】</h1>
-        <div className={style.price}>100枚&nbsp;3110円</div>
-        <p className={style.description}>
-          印刷会社での印刷ですので
-          <br />
-          鮮明で高品質
-        </p>
+        <div className={style.price}>直径30mm&nbsp;100枚&nbsp;3110円</div>
+        <div className={style.price}>直径40mm&nbsp;100枚&nbsp;3390円</div>
+        <p className={style.description}>※全て印刷所での印刷物</p>
         <ImageList imageItemArr={IMAGE_ARR} />
       </main>
     </Frame>
