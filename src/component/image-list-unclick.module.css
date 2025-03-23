@@ -3,7 +3,7 @@
   display: grid;
 
   grid-template-columns: var(--column-width) var(--column-width);
-  row-gap: 8px;
+  row-gap: 16px;
   margin-top: 8px;
 
   @media screen and (min-width: 667px) {
@@ -21,7 +21,8 @@
     }
 
     .name {
-      font-size: 16px;
+      font-size: 12px;
+      text-align: end;
     }
   }
 }
