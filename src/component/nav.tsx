@@ -26,10 +26,10 @@ export default function Nav({ className }: Props) {
         <li><ExternalLink href="https://ameblo.jp/nanarin-0328/entry-12593038491.html">タグ</ExternalLink></li>
         <li><Link href="/shop-sticker/">シール</Link></li>
         <li><Link href="/diploma/">ディプロマ</Link></li>
-        <li><Link href="/">フライヤー</Link></li>
-        <li><Link href="/">リーフレット</Link></li>
-        <li><Link href="/">お客様からの画像</Link></li>
-        <li><Link href="/">お問い合わせお申込み</Link></li>
+        <li><Link href="/flyer/">フライヤー</Link></li>
+        <li><Link href="/leaflet/">リーフレット</Link></li>
+        <li><Link href="/customer/">お客様からの画像</Link></li>
+        <li><ExternalLink href="https://form1ssl.fc2.com/form/?id=db191932d1914a6f">お問い合わせお申込み</ExternalLink></li>
       </ul>
     </nav>
   );

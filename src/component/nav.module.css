@@ -1,5 +1,6 @@
 .nav {
   background-color: var(--color-white);
+  overflow-y: scroll;
 }
 
 .logoContainer {
