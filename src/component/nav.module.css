@@ -12,19 +12,26 @@
 }
 
 .logoImage {
-  aspect-ratio: 130 / 18;
+  aspect-ratio: 400 / 70;
   width: auto;
-  height: 14px;
+  height: 24px;
 }
 
 .linkList {
   font-family: serif;
   list-style-type: none;
 
-  font-size: 14px;
+  font-size: 16px;
   margin: 10px 0 0;
   padding: 0 24px;
+
+  .head {
+    filter: brightness(0.67);
+    color: var(--color-gold);
+    font-size: 15px;
+  }
 }
+
 .linkList li {
   margin-top: 16px;
 
