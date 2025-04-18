@@ -12,12 +12,12 @@
     width: 100%;
 
     .headerLogo {
-      aspect-ratio: 130 / 18;
-      width: auto;
-      height: 18px;
+      aspect-ratio: 400 / 70;
       bottom: 12px;
+      height: 36px;
+      left: 18px;
       position: absolute;
-      right: 18px;
+      width: auto;
 
       @media screen and (min-width: 667px) {
         height: 27px;
