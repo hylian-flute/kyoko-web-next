@@ -22,7 +22,7 @@ export default function Nav({ className }: Props) {
       <ul className={style.linkList}>
         <li>
           <span className={style.head}>テンプレートデザイン一覧ページ</span>
-          <ul className={style.linkList}>
+          <ul className={`${style.linkList} ${style.innerList}`}>
             <li><Link href="/business-card/">名刺</Link></li>
             <li><ExternalLink href="https://ameblo.jp/nanarin-0328/entry-11715685486.html">スタンプカード</ExternalLink></li>
             <li><Link href="/shop-card/">正方形ショップカード</Link></li>

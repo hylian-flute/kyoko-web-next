@@ -37,11 +37,6 @@
 .headerIcon {
   cursor: pointer;
 
-  width: 20px;
-  height: 20px;
-
-  @media screen and (min-width: 667px) {
-    width: 30px;
-    height: 30px;
-  }
+  width: 30px;
+  height: 30px;
 }

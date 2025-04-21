@@ -90,7 +90,8 @@ export default function Diploma() {
         <div className={style.price}>①少量枚数タイプ</div>
         <p className={style.description}>
           デザイン料&nbsp;5,000円（初回のみ）<br />
-          その都度コース名/生徒様名/日付など全てをお入れして印刷して納品<br />
+          その都度コース名/生徒様名/日付など<br />
+          全てをお入れして印刷して納品<br />
           家庭用プリンター印刷<br />
           @500×枚数
         </p>

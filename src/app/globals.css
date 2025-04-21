@@ -6,6 +6,9 @@
   --color-gold: #529002;
   --color-light-yellow: #fbfbde;
 
+  --font-sans: "Noto Sans JP", "ヒラギノ角ゴシック", "游ゴシック", sans-serif;
+  --font-serif: "Noto Serif JP", "ヒラギノ明朝", "游明朝", sans-serif;
+
   /*
    * 画面幅について。
    * 360px: レイアウトを保証する最低幅。iPhone SE 2nd Genの横幅375pxの96%。
@@ -19,6 +22,7 @@
 }
 
 body {
+  font-family: var(--font-sans);
   margin: 0;
 }
 
