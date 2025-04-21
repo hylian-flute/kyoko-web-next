@@ -5,30 +5,15 @@ import style from "./page.module.css";
 import { useEffect } from "react";
 import ImageList, { ImageItem } from "@/component/image-list-unclick";
 
-/*
-name
-- Brillante Rose様
-- La Sweet Bouquet様
-- Amour Mignon様
-- Les abeilles様
-- FLEURAGR様
-- Belle Rose Tiffany様
-- Fontain'u'様
-- Rose Allure様
-- peal rose様
-
-path
-- brillante_rose.jpg
-- la_sweet_bouquet.jpg
-- amour_mignon.jpg
-- les_abeilles.jpg
-- fleuragr.jpg
-- belle_rose_tiffany.jpg
-- fontain_u.jpg
-- rose_allure.jpg
-- peal_rose.jpg
-*/
 const IMAGE_ARR = [
+  new ImageItem(
+    "Grace様",
+    "/image/customer/grace.jpg",
+  ),
+  new ImageItem(
+    "Atelier Tera's様",
+    "/image/customer/atelier_teras.jpg",
+  ),
   new ImageItem(
     "Brillante Rose様",
     "/image/customer/brillante_rose.jpg",
